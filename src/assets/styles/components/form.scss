@@ -1,0 +1,75 @@
+:root {
+  --color-default: #f0f0f0;
+  --color-primary: #777;
+  --color-success: #2ecc71;
+  --color-error: #e74c3c;
+}
+
+.form {
+  padding: 30px 40px;
+
+  &__title {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  &__control {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  &__label {
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    border: 2px solid var(--color-default);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+
+    .success & {
+      border-color: var(--color-success);
+    }
+
+    .error & {
+      border-color: var(--color-error);
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: var(--color-primary);
+    }
+  }
+
+  &__message {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    color: var(--color-error);
+
+    .error & {
+      visibility: visible;
+    }
+  }
+
+  &__submit {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+img {
+  display: block;
+  max-width: 100%;
+
+  &[data-src]::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;
+  }
+}

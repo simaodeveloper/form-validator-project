@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  function loadPrefetchAssets(context, selector) {
+    context.querySelectorAll(selector).forEach(style => style.rel = 'stylesheet');
+  }
+
+  loadPrefetchAssets(document, 'link[rel="prefetch"]');
+</script>
+
+{% for script in htmlWebpackPlugin.files.js %}
+  <script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}

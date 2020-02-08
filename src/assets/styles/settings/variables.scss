@@ -1,0 +1,52 @@
+/*
+  Base Colors
+*/
+$color-default: #ffffff;
+$color-primary: #15573f;
+$color-second: #fd9872;
+$color-third: #7baf9e;
+$color-fourth: #6e6e6e;
+$color-fifth: #0b251c;
+$color-sixth: #f6f6f6;
+$color-seventh: #919191;
+
+/*
+  Texts
+*/
+
+$text-color-default: $color-fourth;
+$text-color-primary: $color-fifth;
+
+/*
+  Background
+*/
+
+$bg-color-default: $color-sixth;
+
+/*
+  Buttons
+*/
+
+// Default
+$button-border-default-color: $color-primary;
+$button-bg-default-color: $color-sixth;
+$button-text-default-color: $color-primary;
+$button-icon-default-color: $color-primary;
+
+// Primary
+$button-border-primary-color: $color-primary;
+$button-bg-primary-color: $color-primary;
+$button-text-primary-color: $color-default;
+$button-icon-primary-color: $color-default;
+
+/*
+  Panels
+*/
+
+$panel-bg-default-color: $color-default;
+
+/*
+  Cards
+*/
+
+$card-bg-default-color: $color-default;

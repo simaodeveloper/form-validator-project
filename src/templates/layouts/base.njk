@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <base href="{{ base }}">
+
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ base }}">
+    <meta property="og:title" content="{{ share.title }}">
+    <meta property="og:description" content="{{ share.description }}">
+    <meta property="og:image" content="{{ base }}{{ share.image }}">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ share.title }}">
+    <meta name="twitter:description" content="{{ share.description }}">
+    <meta name="twitter:image" content="{{ base }}{{ share.image }}">
+
+    <meta itemprop="name" content="{{ share.title }}">
+    <meta itemprop="description" content="{{ share.description }}">
+    <meta itemprop="image" content="{{ base }}{{ share.image }}">
+
+    <link rel="shortcut icon" href="{{ base }}{{ favicon }}">
+
+    {% include 'includes/styles.njk' %}
+
+  </head>
+  <body>
+    {% block header %}
+      {% include 'components/header.njk' %}
+    {% endblock%}
+
+    {% block content %}
+      <main class="wrapper"></main>
+    {% endblock %}
+
+    {% block footer %}
+      {% include 'components/footer.njk' %}
+    {% endblock %}
+
+    {% include 'includes/scripts.njk' %}
+  </body>
+</html>

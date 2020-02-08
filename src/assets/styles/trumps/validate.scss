@@ -1,0 +1,23 @@
+.validate {
+  &--message-error {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 13px;
+    color: red;
+    fill: red;
+
+    .o-icon {
+      margin-right: 8px;
+    }
+  }
+
+  &--error {
+    color: red;
+
+    .c-form__input {
+      border: 1px solid red;
+      color: red;
+    }
+  }
+}

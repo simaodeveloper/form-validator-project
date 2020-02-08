@@ -1,0 +1,13 @@
+.t-text {
+  &--light {
+    @include font-weight('light');
+  }
+
+  &--semi-bold {
+    @include font-weight('semi-bold');
+  }
+
+  &--bold {
+    @include font-weight('bold');
+  }
+}

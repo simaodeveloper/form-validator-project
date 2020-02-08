@@ -1,0 +1,21 @@
+.o-color {
+  &--default {
+    color: $color-fourth;
+  }
+
+  &--primary {
+    color: $color-primary;
+  }
+
+  &--icon-default {
+    fill: $color-default;
+  }
+
+  &--icon-primary {
+    fill: $color-second;
+  }
+
+  &--icon-second {
+    fill: $color-third;
+  }
+}

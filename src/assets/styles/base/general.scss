@@ -1,0 +1,14 @@
+html {
+  @extend %align-center;
+}
+
+body {
+  @extend %align-center;
+  background-color: #f9fafb;
+  font-family: 'Open-Sans', sans-serif;
+  min-height: 100vh;
+}
+
+small {
+  font-size: 80%;
+}

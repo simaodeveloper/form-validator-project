@@ -1,0 +1,17 @@
+{
+  "src/**/*.js": [
+    "eslint --fix",
+    "prettier --write",
+    "jest --bail --findRelatedTests",
+    "git add"
+  ],
+  "src/**/*.scss": [
+    "prettier --write",
+    "git add"
+  ],
+  "__tests__/**/*.js": [
+    "eslint --fix",
+    "prettier --write",
+    "git add"
+  ]
+}

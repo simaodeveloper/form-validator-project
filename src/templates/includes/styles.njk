@@ -1,0 +1,3 @@
+{% for style in htmlWebpackPlugin.files.css %}
+  <link href="{{ style }}" type="text/css" rel="prefetch" as="style" />
+{% endfor %}

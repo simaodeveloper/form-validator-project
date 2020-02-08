@@ -1,0 +1,48 @@
+@use 'sass:color';
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin font-weight($font-weight) {
+  @if ($font-weight == 'light') {
+    font-weight: 300;
+  }
+
+  @if ($font-weight == 'semi-bold') {
+    font-weight: 600;
+  }
+
+  @if ($font-weight == 'bold') {
+    font-weight: 800;
+  }
+}
+
+@mixin box-shadow($x, $y, $blur, $hexColor, $alpha) {
+  box-shadow: $x $y $blur
+    rgba(
+      color.red($hexColor),
+      color.green($hexColor),
+      color.blue($hexColor),
+      $alpha
+    );
+}
+
+@mixin color($hexColor, $alpha: 1) {
+  color: rgba(
+    color.red($hexColor),
+    color.green($hexColor),
+    color.blue($hexColor),
+    $alpha
+  );
+}
+
+@mixin container($width: 1260px, $sidepad: 30px) {
+  max-width: $width;
+  padding: 0 $sidepad;
+  margin: 0 auto;
+}
