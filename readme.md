@@ -1,4 +1,4 @@
-# Boilerplate Javascript Application
+# Form Validation Project
 
 ## Como rodar este projeto
 
@@ -20,12 +20,3 @@
 ```
   yarn test
 ```
-
-### Features
-
-- Template Engine Handlebars
-- ES6 Modules (Webpack)
-- SASS + ITCSS
-- Unit and Functional Tests with JEST
-- E2E tests with CYPRESS
-

@@ -11,7 +11,8 @@
     "test:watch": "yarn test --watch",
     "clear:dist": "rm -rf ./dist",
     "watch:dev": "yarn run clear:dist && webpack-dev-server --open --port 5002",
-    "build:dist": "yarn run clear:dist && webpack --mode production"
+    "build:dist": "yarn run clear:dist && webpack --mode production",
+    "deploy": "yarn run build:dist && npx surge ./dist --domain https://form-validator.surge.sh"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
